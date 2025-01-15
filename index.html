@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <script src="app.js"></script>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+         
+        }
+        button{
+            border: none;
+            border-radius: 4px;
+            width: 3-px;
+            transition: ease-in, transform 0.2s, background-color 0.3s, color 0.3s;
+        }
+        button:hover{
+            transform: scale(1.1);
+            background-color: green;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    Test GitHup 
-    <p id="text">for leraning</p>
-    <button type="button" onclick="remove()">click me!</button>
+    <div class="">
+        Test GitHup
+        <p id="text">for leraning</p>
+        <div class="center">
+            <button type="button" onclick="remove()">click me!</button>
+        </div>
+        
+    </div>
+
 </body>
+
 </html>
